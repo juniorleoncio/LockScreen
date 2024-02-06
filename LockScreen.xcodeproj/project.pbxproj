@@ -14,6 +14,9 @@
 		D8CE9D9C2B7153750067FBD1 /* LockScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9D9B2B7153750067FBD1 /* LockScreenTests.swift */; };
 		D8CE9DA62B7153750067FBD1 /* LockScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9DA52B7153750067FBD1 /* LockScreenUITests.swift */; };
 		D8CE9DA82B7153750067FBD1 /* LockScreenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9DA72B7153750067FBD1 /* LockScreenUITestsLaunchTests.swift */; };
+		D8CE9DB52B7177040067FBD1 /* PasscodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9DB42B7177040067FBD1 /* PasscodeView.swift */; };
+		D8CE9DB72B7177270067FBD1 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9DB62B7177270067FBD1 /* NumberPadView.swift */; };
+		D8CE9DB92B7177570067FBD1 /* PasscodeIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CE9DB82B7177570067FBD1 /* PasscodeIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		D8CE9DA12B7153750067FBD1 /* LockScreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LockScreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8CE9DA52B7153750067FBD1 /* LockScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenUITests.swift; sourceTree = "<group>"; };
 		D8CE9DA72B7153750067FBD1 /* LockScreenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockScreenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D8CE9DB42B7177040067FBD1 /* PasscodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeView.swift; sourceTree = "<group>"; };
+		D8CE9DB62B7177270067FBD1 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		D8CE9DB82B7177570067FBD1 /* PasscodeIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 			children = (
 				D8CE9D8A2B7153730067FBD1 /* LockScreenApp.swift */,
 				D8CE9D8C2B7153730067FBD1 /* ContentView.swift */,
+				D8CE9DB42B7177040067FBD1 /* PasscodeView.swift */,
+				D8CE9DB62B7177270067FBD1 /* NumberPadView.swift */,
+				D8CE9DB82B7177570067FBD1 /* PasscodeIndicatorView.swift */,
 				D8CE9D8E2B7153750067FBD1 /* Assets.xcassets */,
 				D8CE9D902B7153750067FBD1 /* Preview Content */,
 			);
@@ -257,8 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CE9DB52B7177040067FBD1 /* PasscodeView.swift in Sources */,
+				D8CE9DB92B7177570067FBD1 /* PasscodeIndicatorView.swift in Sources */,
 				D8CE9D8D2B7153730067FBD1 /* ContentView.swift in Sources */,
 				D8CE9D8B2B7153730067FBD1 /* LockScreenApp.swift in Sources */,
+				D8CE9DB72B7177270067FBD1 /* NumberPadView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
