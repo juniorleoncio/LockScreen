@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PasscodeView: View {
+    @Binding var isAuthenticated: Bool
     @State private var passcode = ""
     
     var body: some View {
@@ -32,9 +33,22 @@ struct PasscodeView: View {
             
             NumberPadView(passcode: $passcode)
         }
+        .onChange(of: passcode, perform: { value in
+            verifyPasscode()
+        })
+    }
+    
+    private func verifyPasscode() {
+        guard passcode.count == 4 else { return }
+        
+        Task {
+            try? await Task.sleep(nanoseconds: 125_000_000)
+            isAuthenticated = passcode == "7777"
+            passcode = ""
+        }
     }
 }
 
 #Preview {
-    PasscodeView()
+    PasscodeView(isAuthenticated: .constant(false))
 }

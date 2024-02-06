@@ -8,28 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isAuthenticated = false 
+    
     var body: some View {
         VStack {
-            Image(systemName: "visionpro")
-                .resizable()
-                .symbolVariant(.none)
-                .scaledToFit()
-                .foregroundStyle(.cyan)
-                .frame(width: 250, height: 250)
-            
-            Image(systemName: "visionpro")
-                .resizable()
-                .symbolVariant(.fill)
-                .scaledToFit()
-                .foregroundStyle(.cyan)
-                .frame(width: 250, height: 250)
-            
-            Image(systemName: "visionpro")
-                .resizable()
-                .symbolVariant(.slash)
-                .scaledToFit()
-                .foregroundStyle(.cyan)
-                .frame(width: 250, height: 250)
+            if isAuthenticated {
+                VStack {
+                    Text("Voce está logado!")
+                    
+                    Button("Log Out") {
+                        isAuthenticated = false
+                    }
+                }
+            } else {
+                PasscodeView(isAuthenticated: $isAuthenticated)
+            }
         }
         .padding()
     }
